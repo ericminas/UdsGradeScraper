@@ -214,7 +214,7 @@ while iterations < maxIterationsBeforeStopping:
               nextTime.strftime('%H:%M - %d.%m.%y'))
 
         # wait
-        time.sleep(inputs["pollingrate"])
+        time.sleep(inputs["pollingrate"] * 60)
         iterations += 1
     except KeyboardInterrupt:
         print("Programm interrupted. Shutting down")
